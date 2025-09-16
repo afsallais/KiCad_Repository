@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP CMF16-103161-B
+D Common Mode Chokes / Filters Common Mode Inductor: L = 10mH +30/-50% at 1Khz, I = 1.6A max. , B = Bulk Packaging
+K
+F https://componentsearchengine.com/Datasheets/1/CMF16-103161-B.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,175 @@
+(footprint "MOV14D471K"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "<b>MOV-14D471K</b><br>")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "4b066cf9-ec68-4c00-937a-e32f7ca19b3d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "MOV14D471K"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "13cd39eb-7325-41f7-8fa9-bacd159e412f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "80b628e2-7ef1-4d37-99e0-affab4f1c068")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0e2f3ed5-1927-41cb-b865-cbb61563df34")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5d38a5d0-053f-493b-9ed6-6f82052426bd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -8.25 -2.7)
+		(end 8.25 -2.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "353e17e9-c14a-4f7d-95fc-be736ac3f692")
+	)
+	(fp_line
+		(start -8.25 2.7)
+		(end -8.25 -2.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f95fdddf-a57f-4471-97d9-bae1c783bf74")
+	)
+	(fp_line
+		(start 8.25 -2.7)
+		(end 8.25 2.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "49e983f3-5897-4ae6-bfb1-065b06cbafe1")
+	)
+	(fp_line
+		(start 8.25 2.7)
+		(end -8.25 2.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aac5798d-6a90-44d3-bcca-3111ff9d2c78")
+	)
+	(fp_line
+		(start -8.25 -2.7)
+		(end 8.25 -2.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9d46563b-edd7-4039-a27d-50a9fb9d963f")
+	)
+	(fp_line
+		(start -8.25 2.7)
+		(end -8.25 -2.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "679122ca-99e3-4ae6-bf0b-0ee7d89457e3")
+	)
+	(fp_line
+		(start 8.25 -2.7)
+		(end 8.25 2.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f50f98f4-d083-495d-861c-b3c4d022fe6b")
+	)
+	(fp_line
+		(start 8.25 2.7)
+		(end -8.25 2.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "989611e5-0d64-4279-8369-0d04931a3714")
+	)
+	(pad "1" thru_hole oval
+		(at -3.75 0)
+		(size 3.3 1.65)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "79bbeff7-89e1-410e-b186-4eed386c96bc")
+	)
+	(pad "2" thru_hole oval
+		(at 3.75 0)
+		(size 3.3 1.65)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "83f5ff37-b6ab-4050-8ae4-176b73ae96bf")
+	)
+	(model "D:/KiCad/Projects/SMPS/MOV-14D471K/MOV-14D471K.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)
