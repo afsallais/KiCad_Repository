@@ -1489,6 +1489,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 13.97 16.51)
@@ -1553,10 +1654,22 @@
 		(uuid "03eef7b4-4d63-49e3-a430-fd30e65f3a22")
 	)
 	(junction
+		(at 39.37 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "64d53591-faeb-4107-a965-788b1019cdbc")
+	)
+	(junction
 		(at 77.47 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c1df556c-a8a1-438c-9d07-3c617817554a")
+	)
+	(junction
+		(at 36.83 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c54c1bd4-9501-46fd-9b73-c255badee0a1")
 	)
 	(no_connect
 		(at 88.9 148.59)
@@ -1571,6 +1684,16 @@
 			(type default)
 		)
 		(uuid "04c9cbf1-e9e8-4802-a87e-067741a1615b")
+	)
+	(wire
+		(pts
+			(xy 43.18 139.7) (xy 53.34 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11bad41e-451b-497d-81b8-afc6d9e57391")
 	)
 	(wire
 		(pts
@@ -1594,7 +1717,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 29.21) (xy 44.45 29.21)
+			(xy 36.83 29.21) (xy 39.37 29.21)
 		)
 		(stroke
 			(width 0)
@@ -1621,6 +1744,26 @@
 			(type default)
 		)
 		(uuid "54b5bc03-92fb-46c6-97c6-87f858a29166")
+	)
+	(wire
+		(pts
+			(xy 39.37 29.21) (xy 44.45 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0eaac1f-5353-40fa-b9b6-e5361ee642c7")
+	)
+	(wire
+		(pts
+			(xy 53.34 139.7) (xy 53.34 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac47f9f4-7296-4e81-9ece-bba4e5d5f1d7")
 	)
 	(wire
 		(pts
@@ -1692,6 +1835,16 @@
 		)
 		(uuid "ee89fedc-3e0e-47d0-bf17-92f3d260a52e")
 	)
+	(wire
+		(pts
+			(xy 46.99 148.59) (xy 53.34 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5998c58-dd42-40ae-af8f-bf77c26d2a8d")
+	)
 	(global_label "ISNSM"
 		(shape input)
 		(at 53.34 29.21 270)
@@ -1727,6 +1880,28 @@
 		(uuid "0c0c99d7-661c-4086-a5a2-4574475f3a7e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 63.5 44.7138 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "EXT_SUPPLY"
+		(shape input)
+		(at 46.99 148.59 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0c59bf2c-c6a3-4ed7-ae20-ba728e1a0f84")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 32.5144 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1837,28 +2012,6 @@
 		(uuid "29e627c2-8815-4ad4-89bb-dc5b21f2aa27")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 87.3058 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ISNSP"
-		(shape input)
-		(at 53.34 148.59 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2e692b0b-72a4-4b05-bb3d-a410c041bbb8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 44.7305 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2110,9 +2263,9 @@
 			)
 		)
 	)
-	(global_label "IFB"
+	(global_label "ISNSM"
 		(shape input)
-		(at 53.34 140.97 180)
+		(at 43.18 139.7 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2120,53 +2273,9 @@
 			)
 			(justify right)
 		)
-		(uuid "b455ddbc-f8d3-4d1e-9994-d074bf6b3c5a")
+		(uuid "b8616a90-c353-4ab7-86a9-dc07ba336f24")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 47.3914 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "IFB"
-		(shape input)
-		(at 57.15 29.21 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bf54dc9a-d330-4da0-b1d5-eb959571889d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 57.15 35.1586 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ISNSP"
-		(shape input)
-		(at 40.64 29.21 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c122ddb9-55a2-47a0-928b-cc4e6d5e23fe")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.64 37.8195 90)
+			(at 34.3891 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2303,6 +2412,72 @@
 			(project "bq24450"
 				(path "/67786173-b44c-4924-8d78-3c34be998eda"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 39.37 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "112ac481-e296-4d2f-9a85-32797f930233")
+		(property "Reference" "#FLG01"
+			(at 39.37 27.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 39.37 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 39.37 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c9df8c3-2f5d-4fe4-875e-7f1476646452")
+		)
+		(instances
+			(project ""
+				(path "/67786173-b44c-4924-8d78-3c34be998eda"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -3065,6 +3240,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 36.83 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "986b48b1-249c-4a71-816b-a4ed2c977e24")
+		(property "Reference" "#FLG02"
+			(at 36.83 154.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 36.83 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 36.83 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "43c9aedd-1002-4803-9d42-cd492fc0e106")
+		)
+		(instances
+			(project "bq24450"
+				(path "/67786173-b44c-4924-8d78-3c34be998eda"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 40.64 156.21 90)
 		(unit 1)
@@ -3072,10 +3313,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b1cbd2e3-f21b-4c5e-aca9-2c7eb110bc27")
 		(property "Reference" "C_COMP1"
-			(at 40.64 148.59 90)
+			(at 46.736 154.686 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3083,7 +3323,7 @@
 			)
 		)
 		(property "Value" "C"
-			(at 40.64 151.13 90)
+			(at 38.1 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
